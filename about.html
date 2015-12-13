@@ -2,8 +2,157 @@
 <html lang="en">
     <head>
         <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script
+              src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script
+              src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     </head>
+    <style>
+    
+    
+    .bg-1   
+    {
+        background-color: #0099ff; /*green*/
+        color: #ffffff;
+    }
+    .bg-2 {
+        background-color: #474e5d; /*Dark blue*/
+        color: #ffffff;
+    }
+    .bg-3 {
+        background-color: #ffffff; /*white*/
+        color: #555555;
+    }
+    .bg-4 {
+        background-color: #2f2f2f;
+        color: #ffffff;
+    }
+    #profile-pic {
+        width:200px;
+        height:auto;
+    }
+    #carousel-pic {
+        position: relative;
+        margin: auto;
+        width: 70vh;
+        height:auto;
+    }
+    .carousel-div {
+        height: 50vh;
+    }
+    .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        background-color: #2f2f2f;
+    }
+    .navbar-nav li a:hover{
+        color: #1abc9c !important;
+    }
+    </style>
+
     <body>
-        <p>This is some text<p>
+    	<nav class="navbar navbar-default">
+            <div class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html#Home">Home</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="about.html#about">About<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        </ul>-->
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-1 text-center">
+            <div class="container-fluid bg-1 text-center" id="profile-pic">
+                <img src="sf_pic.jpg" alt="sf_prof_pic" class="img-circle img-thumbnail" style="display:inline">
+            </div>
+            <h3>Vincent Yang</h3>
+        </div>
+
+        <div class="container-fluid bg-2 text-center">
+            <h3>Who am I?</h3>
+            <p>some text lalala</p>
+            <a href="#" class="btn btn-default btn-lg">Search</a>
+        </div>
+
+        <div class="container-fluid bg-3 text-center">
+            <h3>Contact Information</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Domination</p>
+                    <img src="burger.jpg" class="img-responsive" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>KeyChain</p>
+                    <img src="burger.jpg" class="img-responsive" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Projects</p>
+                    <img src="burger.jpg" class="img-responsive" alt="Image">
+                </div>
+            </div>
+
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <p>Phone: (408) 203 2094 | Email: vinyang@ucdavis.edu | Github</p>
+        </footer>
     </body>
 </html>
