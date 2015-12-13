@@ -32,6 +32,14 @@
         background-color: #2f2f2f;
         color: #ffffff;
     }
+    .bg-white {
+        background-color: #ffffff;
+        color: #555555;
+    }
+    .bg-black {
+        background-color: #000000;
+        color: #ffffff;
+    }
     #profile-pic {
         width:200px;
         height:auto;
@@ -39,91 +47,105 @@
     #carousel-pic {
         position: relative;
         margin: auto;
-        width: 70vh;
+        width: 90vh;
         height:auto;
     }
     .carousel-div {
-        height: 50vh;
+        height: 90vh;
     }
     .container-fluid {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
 
     .navbar {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        border: 0;
-        border-radius: 0;
         margin-bottom: 0;
-        font-size: 12px;
-        letter-spacing: 5px;
-        background-color: #2f2f2f;
+        background-color: #2d2d30;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity:0.9;
     }
+    
     .navbar-nav li a:hover{
-        color: #1abc9c !important;
+        color: #fff !important;
+    }
+    /* The active link */
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color:#29292c !important;
+    }
+
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    /* Dropdown */
+    .open .dropdown-toggle {
+        color: #fff ;
+        background-color: #555 !important;
+    }
+
+    /* Dropdown links */
+    .dropdown-menu li a {
+        color: #000 !important;
+    }
+
+    /* On hover, the dropdown links will turn red */
+    .dropdown-menu li a:hover {
+        background-color: red !important;
+    }
+    #Carousel {
+        margin-top: 50px;
     }
 
 
     </style>
 
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="navbar">
-                <!-- Brand and toggle get grouped for better mobile display -->
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!-- Start Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div>
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html#Home">Home</a>
+                    <a class="navbar-brand" href="index.html">Home</a>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="about.html#about">About<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Projects</a></li>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#Carousel">Home</a></li>
+                        <li><a href="#purpose">Purpose</a></li>
+                        <li><a href="#pillarscroll">Pillars</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#social">Social</a></li>
+                        <li><a href="#professional">Professional</a></li>
+                        <li><a href="#contactinfo">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                                <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a href="dsp.html#Delta Sigma Pi">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                                <li><a href="#">Extras</a></li>
+                                <li><a href="#">Media</a></li>
                             </ul>
                         </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
                     </ul>
-                    <!--<ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                        </ul>-->
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
                 </div>
             </div>
         </nav>
         <!-- End Nav Bar -->
         <!-- Start Carousel -->
         <div id="Carousel" class="carousel slide">
+
         <ol class="carousel-indicators">
             <li data-target="Carousel" data-slide-to="0" class="active"></li>
             <li data-target="Carousel" data-slide-to="1"></li>
@@ -168,21 +190,56 @@
 
 
 
-        <div class="container-fluid bg-1 text-center">
-            <div class="container-fluid bg-1 text-center" id="profile-pic">
+        <div class="container-fluid bg-1 text-center" id="purpose">
+            <!--<div class="container-fluid bg-1 text-center">
                 <img src="sf_pic.jpg" alt="sf_prof_pic" class="img-circle img-thumbnail" style="display:inline">
-            </div>
-            <h3>Vincent Yang</h3>
+                <a href="#1">1</a>
+            </div>-->
+            <h3>Purpose</h3>
+            <p>Delta Sigma Pi is a professional fraternity organized to foster the study of business in universities; to encourage scholarship, social activity and the association of students for their mutual advancement by research and practice; to promote closer affiliation between the commercial world and students of commerce and to further a higher standard of commercial ethics and culture and the civic and commercial welfare of the community.</p>
+
         </div>
 
-        <div class="container-fluid bg-2 text-center">
-            <h3>Who am I?</h3>
+        <div class="container-fluid bg-2 text-center" id="pillarscroll">
+            <h3>pillars</h3>
             <p>some text lalala</p>
-            <a href="#" class="btn btn-default btn-lg">Search</a>
+            <body id="myPage" data-spy="scroll" data-target="pillarscroll" data-offset="50">
+            
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-3" id="pillarscroll">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#leadership">leadership</a></li>
+                        <li><a href="#service">service</a></li>
+                        <li><a href="#social">social</a></li>
+                        <li><a href="#professional">Professional</a><li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <div class="container-fluid bg-3 text-center">
-            <h3>Contact Information</h3>
+        </body>
+        
+        <div class="container-fluid bg-black text-center" id="leadership">
+            <h3>leadership</h3>
+            <p>some text lalala</p>
+        </div>
+        <div class="container-fluid bg-white text-center" id="service">
+            <h3>service</h3>
+            <p>some text lalala</p>
+        </div>
+        <div class="container-fluid bg-black text-center" id="social">
+            <h3>social</h3>
+            <p>some text lalala</p>
+        </div>
+        <div class="container-fluid bg-white text-center" id="professional">
+            <h3>professional</h3>
+            <p>some text lalala</p>
+        </div>
+    </div>
+
+        <div class="container-fluid bg-black text-center" id="contactinfo">
+            <h3>Contact</h3>
             <div class="row">
                 <div class="col-sm-4">
                     <p>Domination</p>
@@ -199,6 +256,34 @@
             </div>
 
         </div>
+
+
+        <script>
+            $(document).ready(function(){
+          // Initialize Tooltip
+          $('[data-toggle="tooltip"]').tooltip(); 
+          
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+           
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          });
+        })
+        </script>
 
         <footer class="container-fluid bg-4 text-center">
             <p>
