@@ -51,9 +51,13 @@
         <input type="text" name="lastname" value="Mouse" id="potentialpassword">
         <br><br>
         <input type="submit" id="registration" value="Submit">
+        <br><br>
+        Sign in:<br>
+        <input type="submit" id="signin" value="Sign In">
+        <br><br>
 
 <script type="text/javascript">
-    Parse.initialize("SUlv91QsTUVMPR5pXYhJSH6y50E7NKgpuPRRgABj", "qp90ONeQfJUzeRoJM6RdgTB8EDWTGjIejl7qfHUP");
+    Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
 
 
     $(document).ready(function() {
@@ -69,20 +73,16 @@
                 user.set("username", username);
                 user.set("password", password);
 
-                alert("start");
-user.signUp(null, {
-  success: function(user) {
-    // Hooray! Let them use the app now.
-      alert("yay");
-  },
-  error: function(user, error) {
-    // Show the error message somewhere and let the user try again.
-    alert("Error: " + error.code + " " + error.message);
-  }
-});
-                alert("end");
-
-
+                user.signUp(null, {
+                success: function(user) {
+                    // Hooray! Let them use the app now.
+                    alert("yay");
+                },
+                error: function(user, error) {
+                    // Show the error message somewhere and let the user try again.
+                    alert("Error: " + error.code + " " + error.message);
+                }
+            });
         });
     });
 
