@@ -44,16 +44,17 @@
     </div>
 
 
-        First name:<br>
-        <input type="text" name="firstname" value="Mickey" id="potentialusername">
+        Username<br>
+        <input type="text" name="firstname" id="potentialusername">
         <br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Mouse" id="potentialpassword">
+        Password<br>
+        <input type="password" name="lastname" id="potentialpassword">
         <br><br>
         <input type="submit" id="registration" value="Submit">
         <br><br>
-        Sign in:<br>
         <input type="submit" id="signin" value="Sign In">
+        <br><br>
+        <input type="submit" id="signout" value="Sign Out">
         <br><br>
 
 <script type="text/javascript">
@@ -73,6 +74,7 @@
                 user.set("username", username);
                 user.set("password", password);
 
+
                 user.signUp(null, {
                 success: function(user) {
                     // Hooray! Let them use the app now.
@@ -83,6 +85,26 @@
                     alert("Error: " + error.code + " " + error.message);
                 }
             });
+        });
+        $('#signin').click(function() {
+            alert("reached");
+            var username=document.getElementById('potentialusername').value;
+            var password=document.getElementById('potentialpassword').value;
+            Parse.User.logIn(username, password, {
+                success: function(user) {
+                    alert("logged in!");
+                },
+                error: function(user, error) {
+                    alert("oh no")
+                }
+            });
+        });
+        $('#signout').click(function() {
+            if (Parse.User.current() == null) {
+                alert("Not logged in");
+            }
+            alert("signing out");
+            Parse.User.logOut();
         });
     });
 
