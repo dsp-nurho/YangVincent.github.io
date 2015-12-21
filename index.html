@@ -32,31 +32,31 @@
                 font-weight: 400;
                 margin-bottom: 30px;
             }  
-.jumbotron {
-background-color: #2412b4;
-color: #fff;
-padding: 100px 25px;
-font-family: "Times New Roman", Times, serif;
-}
-.container-fluid {
-padding: 50px 25px;
-}
-.foot {
-margin-top: 30px;
-padding: 15px;
-
-}
-.bg-grey {
-background-color: #f6f6f6;
-}
-.logo-small {
-color: #2412b4;
-font-size: 50px;
-}
-.logo {
-color: #2412b4;
-font-size: 200px;
-}
+            .jumbotron {
+                background-color: #2412b4;
+                color: #fff;
+                padding: 100px 25px;
+                font-family: "Times New Roman", Times, serif;
+            }
+            .container-fluid {
+                padding: 50px 25px;
+            }
+            .foot {
+                margin-top: 30px;
+                padding: 15px;
+        
+            }
+            .bg-grey {
+                background-color: #f6f6f6;
+            }
+            .logo-small {
+                color: #2412b4;
+                font-size: 50px;
+            }
+            .logo {
+                color: #2412b4;
+                font-size: 200px;
+                }
 .thumbnail {
 padding: 0 0 15px 0;
 border: none;
@@ -558,6 +558,9 @@ $(document).ready(function(){
             </footer>
             <div>
 
+            <div class="alert fade in alert-success collapse" id="logged-in-status" role="alert" style="display:none;">
+                <strong>Logged in!</strong>
+            </div>
             Username<br>
             <input type="text" name="firstname" id="potentialusername">
             <br>
@@ -565,7 +568,7 @@ $(document).ready(function(){
             <input type="password" name="lastname" id="potentialpassword">
             <br><br>
             <input type="submit" id="registration" value="Submit">
-            <div class="alert alert-block fade in alert-danger collapse" id="login-error" role="alert" style="display:none;">
+            <div class="alert fade in alert-danger collapse" id="login-error" role="alert" style="display:none;">
                 <button href="#" class="close" aria-label="close">&times;</button>
                 <strong>Error!</strong>
             </div>
@@ -587,19 +590,14 @@ $(document).ready(function() {
     $('#registration').click(function() {
         var username=document.getElementById('potentialusername').value;
         var password=document.getElementById('potentialpassword').value;
-        console.log("reachedend");
-        console.log("Username is", username);
-        console.log("Password is", password);
-        console.log("making user");
         var user = new Parse.User();
         user.set("username", username);
         user.set("password", password);
-
-
         user.signUp(null, {
             success: function(user) {
                 // Hooray! Let them use the app now.
                 alert("yay");
+                $('#logged-in-status').show();
                 document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
             },
