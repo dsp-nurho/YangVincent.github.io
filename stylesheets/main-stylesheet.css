@@ -51,6 +51,12 @@ h4 {
 .container-fluid {
     padding: 50px 25px;
 }
+.calendar {
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
 .foot {
     margin-top: 30px;
     padding: 15px;
