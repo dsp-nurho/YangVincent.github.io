@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/main-stylesheet.css" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -12,190 +13,7 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
         <script src="bootbox.min.js"></script>
-        <style>
-            body {
-                font: 400 15px "Times New Roman", Times, serif;
-                line-height: 1.8;
-                color: #818180;
-            }
-            h2 {
-                font-size: 24px;
-                text-transform: uppercase;
-                color: #303030;
-                font-weight: 600;
-                margin-bottom: 30px;
-            }
-            h4 {
-                font-size: 19px;
-                line-height: 1.375em;
-                color: #303030;
-                font-weight: 400;
-                margin-bottom: 30px;
-            }  
-            .jumbotron {
-                background-color: #2412b4;
-                color: #fff;
-                padding: 100px 25px;
-                font-family: "Times New Roman", Times, serif;
-            }
-            .container-fluid {
-                padding: 50px 25px;
-            }
-            .foot {
-                margin-top: 30px;
-                padding: 15px;
         
-            }
-            .bg-grey {
-                background-color: #f6f6f6;
-            }
-            .logo-small {
-                color: #2412b4;
-                font-size: 50px;
-            }
-            .logo {
-                color: #2412b4;
-                font-size: 200px;
-                }
-.thumbnail {
-padding: 0 0 15px 0;
-border: none;
-border-radius: 0;
-}
-.thumbnail img {
-width: 100%;
-height: 100%;
-margin-bottom: 10px;
-}
-.carousel-control.right, .carousel-control.left {
-background-image: none;
-color: #2412b4;
-}
-.carousel-indicators li {
-border-color: #2412b4;
-}
-.carousel-indicators li.active {
-background-color: #2412b4;
-}
-.item h4 {
-font-size: 19px;
-line-height: 1.375em;
-font-weight: 400;
-font-style: italic;
-margin: 70px 0;
-}
-.item span {
-font-style: normal;
-}
-.panel {
-border: 1px solid #2412b4; 
-border-radius:0 !important;
-transition: box-shadow 0.5s;
-}
-.panel:hover {
-box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-.panel-footer .btn:hover {
-border: 1px solid #2412b4;
-background-color: #fff !important;
-color: #2412b4;
-}
-.panel-heading {
-color: #fff !important;
-background-color: #2412b4 !important;
-padding: 25px;
-border-bottom: 1px solid transparent;
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-}
-.panel-footer {
-background-color: white !important;
-}
-.panel-footer h3 {
-font-size: 32px;
-}
-.panel-footer h4 {
-color: #aaa;
-font-size: 14px;
-}
-.panel-footer .btn {
-margin: 15px 0;
-background-color: #2412b4;
-color: #fff;
-}
-.navbar {
-margin-bottom: 0;
-background-color: #2412b4;
-z-index: 9999;
-border: 0;
-font-size: 12px !important;
-line-height: 1.42857143 !important;
-letter-spacing: 4px;
-border-radius: 0;
-font-family: "Times New Roman", Times, serif;
-}
-.navbar li a, .navbar .navbar-brand {
-color: #fff !important;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-color: #2412b4 !important;
-background-color: #fff !important;
-}
-.navbar-default .navbar-toggle {
-border-color: transparent;
-color: #fff !important;
-}
-footer .glyphicon {
-font-size: 20px;
-margin-bottom: 20px;
-color: #2412b4;
-}
-.slideanim {visibility:hidden;}
-.slide {
-animation-name: slide;
--webkit-animation-name: slide;	
-animation-duration: 1s;	
--webkit-animation-duration: 1s;
-visibility: visible;			
-}
-@keyframes slide {
-0% {
-opacity: 0;
--webkit-transform: translateY(70%);
-} 
-100% {
-opacity: 1;
--webkit-transform: translateY(0%);
-}	
-}
-@-webkit-keyframes slide {
-0% {
-opacity: 0;
--webkit-transform: translateY(70%);
-} 
-100% {
-opacity: 1;
--webkit-transform: translateY(0%);
-}
-}
-@media screen and (max-width: 768px) {
-.col-sm-4 {
-text-align: center;
-margin: 25px 0;
-}
-.btn-lg {
-width: 100%;
-margin-bottom: 35px;
-}
-}
-@media screen and (max-width: 480px) {
-.logo {
-font-size: 150px;
-}
-}
-        </style>
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -207,7 +25,10 @@ font-size: 150px;
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#myPage">ΔΣΠ</a>
+                    <!--<a class="navbar-brand" href="#myPage">ΔΣΠ</a>-->
+                    <div id="ribbon-icon">
+                        <img src="images/DSPlogo.png" class="ribbon" href="#myPage"/>
+                    </div>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -216,6 +37,7 @@ font-size: 150px;
                         <li><a href="#services">SERVICES</a></li>
                         <li><a href="#pillars">PILLARS</a></li>
                         <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#events">events</a></li>
                         <!--<li><a href="#portfolio">PORTFOLIO</a></li>-->
                         <!--<li><a href="#pricing">PRICING</a></li>-->
                     </ul>
@@ -223,7 +45,7 @@ font-size: 150px;
             </div>
         </nav>
 
-        <div class="jumbotron text-center">
+        <div class="banner jumbotron text-center">
             <h1>Delta Sigma Pi</h1> 
             <p>The Premier Business Fraternity | University of Davis, California | Nu Rho Chapter</p> 
             <form class="form-inline">
@@ -314,21 +136,21 @@ font-size: 150px;
             <div class="row text-center slideanim">
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="rave1.jpg" alt="Paris" width="400" height="300">
+                        <img src="images/rave1.jpg" alt="Paris" width="400" height="300">
                         <p><strong>i dont remember what this was</strong></p>
                         <p>lalala</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="DSP.jpg" alt="Alpha Phi Pledge Class" width="400" height="300">
+                        <img src="images/DSP.jpg" alt="Alpha Phi Pledge Class" width="400" height="300">
                         <p><strong>Alpha Phi Class</strong></p>
                         <p>Name, Name, Name</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="mall.jpg" alt="Great Mall" width="400" height="300">
+                        <img src="images/mall.jpg" alt="Great Mall" width="400" height="300">
                         <p><strong>Great Mall</strong></p>
                         <p></p>
                     </div>
@@ -472,6 +294,8 @@ font-size: 150px;
                     </div>
                 </div>
             </div>
+            <!--<div id="events" class="container-fluid bg-grey"> #do work here!!!!
+                </div>--> 
 
             <div id="googleMap" style="height:400px;width:100%;"></div>
 
@@ -587,6 +411,8 @@ $(document).ready(function(){
             <br><br>
             <input type="submit" id="signout" value="Sign Out">
             <br><br>
+            <input type="submit" id="change-password" value="Change Password">
+            <br><br>
             </div>
 
             <script type="text/javascript">
@@ -635,6 +461,26 @@ $(document).ready(function() {
             }
         });
     });
+    $('#change-password').click(function() {
+        var email = document.getElementById('potentialemail').value;
+        if (email == "") {
+            alert("You must fill out the email field!");
+            return;
+        }
+        if (Parse.User.current() != null) {
+            $('#already-logged-in').show();
+            return;
+        }    
+        Parse.User.requestPasswordReset(email, {
+            success: function() {
+                //Password reset request sent successfully
+                alert("You have been sent an email! Use it to reset the password");
+            },
+            error: function(error) {
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    });
     $('#signin').click(function() {
         if (Parse.User.current() != null){
             $('#already-logged-in').show();
@@ -671,6 +517,7 @@ $(document).ready(function() {
         alert("signing out");
         Parse.User.logOut();
         $('#logged-in-status').hide();
+        $('#already-logged-in').hide();
     });
 });
     </script>
