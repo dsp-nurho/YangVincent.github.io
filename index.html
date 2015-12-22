@@ -561,15 +561,25 @@ $(document).ready(function(){
             <div class="alert fade in alert-success collapse" id="logged-in-status" role="alert" style="display:none;">
                 <strong>Logged in!</strong>
             </div>
+            <div class="alert fade in alert-success collapse" id="logged-out-status" role="alert" style="display:none;">
+                <strong>Logged out!</strong>
+            </div>
+            <div class="alert fade in alert-warning collapse" id="already-logged-in" role="alert" style="display:none;">
+                <button href="#" class="close-already-logged-in" aria-label="close">&times;</button>
+                <strong>Already Logged In!</strong>
+            </div>
             Username<br>
             <input type="text" name="firstname" id="potentialusername">
             <br>
             Password<br>
             <input type="password" name="lastname" id="potentialpassword">
+            <br>
+            Email<br>
+            <input type="text" name="email" id="potentialemail">
             <br><br>
             <input type="submit" id="registration" value="Submit">
             <div class="alert fade in alert-danger collapse" id="login-error" role="alert" style="display:none;">
-                <button href="#" class="close" aria-label="close">&times;</button>
+                <button href="#" class="close-error" aria-label="close">&times;</button>
                 <strong>Error!</strong>
             </div>
             <br><br>
@@ -580,61 +590,90 @@ $(document).ready(function(){
             </div>
 
             <script type="text/javascript">
-Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
+                Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
 
 
 $(document).ready(function() {
-    $('.close').click(function() {
+    $('.close-error').click(function() {
         $('#login-error').hide();
     });
+    $('.close-already-logged-in').click(function() {
+        $('#already-logged-in').hide();
+    });
     $('#registration').click(function() {
+        if (Parse.User.current() != null){
+            $('#already-logged-in').show();
+            return;
+        }
+        alert("does this get hit?");
+
         var username=document.getElementById('potentialusername').value;
         var password=document.getElementById('potentialpassword').value;
+        var email=document.getElementById('potentialemail').value;
         var user = new Parse.User();
         user.set("username", username);
         user.set("password", password);
+        user.set("email", email);
         user.signUp(null, {
             success: function(user) {
                 // Hooray! Let them use the app now.
                 alert("yay");
                 $('#logged-in-status').show();
+                $('#logged-out-status').hide();
                 document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
+                document.getElementById('potentialemail').value = "";
             },
             error: function(user, error) {
                 // Show the error message somewhere and let the user try again.
                 $('#login-error').show();
+                $('logged-out-status').hide();
                 alert("Error: " + error.code + " " + error.message);
                 document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
+                document.getElementById('potentialemail').value = "";
             }
         });
     });
     $('#signin').click(function() {
-        alert("reached");
+        if (Parse.User.current() != null){
+            $('#already-logged-in').show();
+            return;
+        }
         var username=document.getElementById('potentialusername').value;
         var password=document.getElementById('potentialpassword').value;
         Parse.User.logIn(username, password, {
             success: function(user) {
                 alert("logged in!");
+                document.getElementById('potentialusername').value = "";
+                document.getElementById('potentialpassword').value = "";
+                document.getElementById('potentialemail').value = "";
+                $('#logged-in-status').show();
             },
             error: function(user, error) {
-                alert("oh no")
+                alert("Unable to log in")
+                document.getElementById('potentialusername').value = "";
+                document.getElementById('potentialpassword').value = "";
+                document.getElementById('potentialemail').value = "";
+                $('#logged-in-status').hide();
+                $('logged-out-status').show();
+
             }
         });
     });
     $('#signout').click(function() {
+        document.getElementById('potentialusername').value = "";
+        document.getElementById('potentialpassword').value = "";
+        document.getElementById('potentialemail').value = "";
         if (Parse.User.current() == null) {
             alert("Not logged in");
         }
         alert("signing out");
         Parse.User.logOut();
+        $('#logged-in-status').hide();
     });
 });
-
-
     </script>
     </body>
-
 </html>
 
