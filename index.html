@@ -16,7 +16,6 @@
         
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -350,14 +349,13 @@ $(document).ready(function(){
             window.location.href=pageRef;
         }
         else {
-
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 900, function(){
 
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
-        }});
+        })};
     });
 
     // Slide in elements on scroll
