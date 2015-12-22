@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="stylesheets/main-stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="fullcalendar/fullcalendar.css"/> <!-- fullcalendar conversion with google calendar -->
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -13,7 +14,9 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
         <script src="bootbox.min.js"></script>
-    </head>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <script src="fullcalendar/dist/fullcalendar.js"></script>
 
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -259,8 +262,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 $(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-
         // Prevent default anchor click behavior
         event.preventDefault();
 
@@ -351,39 +352,39 @@ $(document).ready(function(){
 
 
             $(document).ready(function() {
-            $('.close-error').click(function() {
-                $('#login-error').hide();
-            });
-            $('.close-already-logged-in').click(function() {
-                $('#already-logged-in').hide();
-            });
-            $('#registration').click(function() {
-                if (Parse.User.current() != null){
-                    $('#already-logged-in').show();
-                    return;
-                }
+                $('.close-error').click(function() {
+                    $('#login-error').hide();
+                });
+                $('.close-already-logged-in').click(function() {
+                    $('#already-logged-in').hide();
+                });
+                $('#registration').click(function() {
+                    if (Parse.User.current() != null){
+                        $('#already-logged-in').show();
+                        return;
+                    }
 
-                var username=document.getElementById('potentialusername').value;
-                var password=document.getElementById('potentialpassword').value;
-                var email=document.getElementById('potentialemail').value;
-                var user = new Parse.User();
-                user.set("username", username);
-                user.set("password", password);
-                user.set("email", email);
-                user.signUp(null, {
-                    success: function(user) {
-                        // Hooray! Let them use the app now.
-                        $('#logged-in-status').show();
-                        $('#logged-out-status').hide();
-                        document.getElementById('potentialusername').value = "";
-                        document.getElementById('potentialpassword').value = "";
-                        document.getElementById('potentialemail').value = "";
-                    },
-                    error: function(user, error) {
-                        // Show the error message somewhere and let the user try again.
-                        $('#login-error').show();
-                        $('logged-out-status').hide();
-                        alert("Error: " + error.code + " " + error.message);
+                    var username=document.getElementById('potentialusername').value;
+                    var password=document.getElementById('potentialpassword').value;
+                    var email=document.getElementById('potentialemail').value;
+                    var user = new Parse.User();
+                    user.set("username", username);
+                    user.set("password", password);
+                    user.set("email", email);
+                    user.signUp(null, {
+                        success: function(user) {
+                            // Hooray! Let them use the app now.
+                            $('#logged-in-status').show();
+                            $('#logged-out-status').hide();
+                            document.getElementById('potentialusername').value = "";
+                            document.getElementById('potentialpassword').value = "";
+                            document.getElementById('potentialemail').value = "";
+                        },
+                        error: function(user, error) {
+                            // Show the error message somewhere and let the user try again.
+                            $('#login-error').show();
+                            $('logged-out-status').hide();
+                            alert("Error: " + error.code + " " + error.message);
                         document.getElementById('potentialusername').value = "";
                         document.getElementById('potentialpassword').value = "";
                         document.getElementById('potentialemail').value = "";
