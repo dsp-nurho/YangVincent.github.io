@@ -9,6 +9,11 @@
     max-height: 7vh;
     bottom: 1px;
 }
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
 .banner {
     /*background-image: url("../images/rave1.jpg");*/
     /*background-image: url("../images/companies-old.jpg");*/
