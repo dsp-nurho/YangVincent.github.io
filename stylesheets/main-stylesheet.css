@@ -1,4 +1,14 @@
 /*Taken from main index*/
+/*Preloading Screen*/
+/*Fade preloader out
+ * animate left and right side of overlay out of view
+ * animate loader wrapper out of view
+ */
+
+
+/*End Preloading Screen*/
+
+
 #ribbon-icon {
     position: relative;
 }
