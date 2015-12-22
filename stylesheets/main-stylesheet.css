@@ -10,10 +10,13 @@
     bottom: 1px;
 }
 .banner {
-    background-image: url("../images/rave1.jpg");
+    /*background-image: url("../images/rave1.jpg");*/
+    /*background-image: url("../images/companies-old.jpg");*/
+    background-image: url("../images/black-background.png");
     background-size: 180vh;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
+    min-height: 48vh;
 }
 body {
     font: 400 15px "Times New Roman", Times, serif;
