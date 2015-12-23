@@ -1,7 +1,6 @@
 $(document).ready(function() {
     setTimeout(function() {
         $('body').addClass('loaded');
-        $('h1').css('color', '#222222');
     }, 1500);
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
