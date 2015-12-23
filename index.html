@@ -1,296 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>ΔΣΠ | NP</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheets/main-stylesheet.css" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-        <script src="bootbox.min.js"></script>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <link rel="stylesheet" href="stylesheets/loading.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>                                                                   
-        <script src="js/main.js"></script>
+        <!-- Basic Page Needs
+            ================================================== -->
+            <meta charset="utf-8">
+            <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Delta Sigma Pi</title>
+            <meta name="description" content="Spirit8 is a Digital agency one page template built based on bootstrap framework. This template is design by Robert Berki and coded by Jenn Pereira. It is simple, mobile responsive, perfect for portfolio and agency websites. Get this for free exclusively at ThemeForces.com">
+            <meta name="keywords" content="bootstrap theme, portfolio template, digital agency, onepage, mobile responsive, spirit8, free website, free theme, themeforces themes, themeforces wordpress themes, themeforces bootstrap theme">
+            <meta name="author" content="ThemeForces.com">
 
+            <!-- Favicons
+                ================================================== -->
+                <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+                <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-        <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-            <!-- Prepage loading -->
-            <div id="loader-wrapper">
-                <div id="loader"></div>
-                <div class="loader-section section-left"></div>
-                <div class="loader-section section-right"></div>
-            </div>
-            <nav class="navbar navbar-default navbar-fixed-top">
+                <!-- Bootstrap -->
+                <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+                <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+                <!-- Slider
+                    ================================================== -->
+                    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+                    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+                    <!-- Stylesheet
+                        ================================================== -->
+                        <link rel="stylesheet" type="text/css"  href="css/style.css">
+                        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+                        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+                        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+                        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+                        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                        <!--[if lt IE 9]>
+                            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                            <![endif]-->
+    </head>
+    <body>
+        <!-- Navigation
+            ==========================================-->
+            <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
+                            <span class="icon-bar"></span>
                         </button>
-                        <!--<a class="navbar-brand" href="#myPage">ΔΣΠ</a>-->
-                        <div id="ribbon-icon">
-                            <img src="images/DSPlogo.png" class="ribbon" href="#myPage"/>
-                        </div>
+                        <a class="navbar-brand" href="index.html">Delta Sigma Pi</a>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#values">VALUES</a></li>
-                            <li><a href="#services">SERVICES</a></li>
-                            <li><a href="#pillars">PILLARS</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                            <li><a href="events.html#">EVENTS</a></li>
-                            <li><a href="signin.html#">SIGN IN</a></li>
+                            <li><a href="#tf-home" class="page-scroll">Home</a></li>
+                            <li><a href="#tf-about" class="page-scroll">About</a></li>
+                            <li><a href="#tf-team" class="page-scroll">Team</a></li>
+                            <li><a href="#tf-services" class="page-scroll">Services</a></li>
+                            <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
+                            <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>
+                            <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
             </nav>
-            <div class="banner">
-            </div>
 
-
-
-            <!-- Container (About Section) -->
-            <div id="about" class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h2>About Delta Sigma Pi</h2><br>
-                        <h4>Purpose:</h4>
-                        <p>Delta Sigma Pi is a professional fraternity organized to foster the study of business in universities;
-                        to encourage scholarship, social activity and the association of students for their mutual advancement
-                        by research and practice; to promote closer affiliation between the commercial world and students of commerce,
-                        and to further a higher standard of commercial ethics and culture and the civic and commercial welfare of the
-                        community.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-briefcase logo"></span>
+            <!-- Home Page
+                ==========================================-->
+                <div id="tf-home" class="text-center">
+                    <div class="overlay">
+                        <div class="content">
+                            <h1>Welcome to <strong><span class="color">Delta Sigma Pi</span></strong></h1>
+                            <p class="lead">We are a <strong>Professional Fraternity</strong> with <strong>extraordinary people</strong></p>
+                            <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="values" class="container-fluid bg-grey">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-globe logo slideanim"></span>
-                    </div>
-                    <div class="col-sm-8">
-                        <h2>Our Values</h2><br>
-                        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-                        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Container (Services Section) -->
-            <div id="services" class="container-fluid text-center">
-                <h2>SERVICES</h2>
-                <h4>What we offer</h4>
-                <br>
-                <div class="row slideanim">
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-off logo-small"></span>
-                        <h4>POWER</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-heart logo-small"></span>
-                        <h4>BROTHERHOOD</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-lock logo-small"></span>
-                        <h4>SKILLS</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row slideanim">
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-fire logo-small"></span>
-                        <h4>PROACTIVE</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-info-sign logo-small"></span>
-                        <h4>CERTIFIED</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-education logo-small"></span>
-                        <h4 style="color:#303030;">HARD WORK</h4>
-                        <p>Lorem ipsum dolor sit amet..</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Container (Pillars Section) -->
-            <div id="pillars" class="container-fluid text-center bg-grey">
-                <h2>Pillars</h2><br>
-                <!--<h4>What we have created</h4>-->
-                <div class="row text-center slideanim">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="images/rave1.jpg" alt="Paris" width="400" height="300">
-                            <p><strong>i dont remember what this was</strong></p>
-                            <p>lalala</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="images/DSP.jpg" alt="Alpha Phi Pledge Class" width="400" height="300">
-                            <p><strong>Alpha Phi Class</strong></p>
-                            <p>Name, Name, Name</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="images/mall.jpg" alt="Great Mall" width="400" height="300">
-                            <p><strong>Great Mall</strong></p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div><br>
-
-                <h2>Advice from Brothers</h2>
-                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <h4>"I think the biggest tip that I can give about finding an internship is to be extremely persistent. Don't just limit yourself
-                                to a few applications; apply to everything you think you might have the slightest interest in and efinitely network and utilize
-                                your connections. Delta Sigma Pi taught me how to present myself professionally, and that carried from the moment I interiewed,
-                                to my daily presence at work and my presentation skills in front of VPs and Directors"<br><br><br><span style="font-style:normal;">Brother Tiffany Lin | Finance Summer Analyst at Barclays Investment Bank<br></span></h4>
-                        </div>
-                        <div class="item">
-                            <h4>"The best advice I have is that you have to make sure that there are no errors in your resume, cover letter, presentations, and emails.
-                                I did not believe having attention-to-detail was this crucial, but after networking and interviewing with HP managers, every one of them 
-                                emphasized the importance of being error-free. I can say that Delta Sigma Pi has definitely helped me in this aspect, and because of this skill, I've had the opportunity to present in front of eight executives and directors"<br><br><span style="font-style:normal;">Brother Leslie Chan | Supply Chain Analyst Intern at Hewlett-Packard<br></span></h4>
-                        </div>
-                        <div class="item">
-                            <h4>"Remember that a job needs you more than you 'want' it. People tend to experience anxiety when they are in the position to 'need' something 
-                                that is under the control of someone else. By having the frame of mind 'want' rather than 'need' the job, you will go into the interview with a level of
-                                confidence that you wouldn't have otherwise. Delta Sigma Pi has definitely helped with my confidence by providing me with a sense of belongingness. This feeling
-                                that people crave for can help many students discover the confidence they need to pursue the dreams they've always been afraid to chase"<br><br><span style="font-style:normal;">Brother Henley Huang | Accounting Clerk at Hotel Nikko San Francisco<br></span></h4>
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Container (Contact Section) -->
-            <div id="contact" class="container-fluid bg-grey">
-                <h2 class="text-center">CONTACT</h2>
-                <div class="row">
-                    <div class="col-sm-5">
-                        <p>Contact us and we'll get back to you within 24 hours.</p>
-                        <p><span class="glyphicon glyphicon-map-marker"></span> Davis, US</p>
-                        <p><span class="glyphicon glyphicon-phone"></span> +01 1515151515</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>	   
-                    </div>
-                    <div class="col-sm-7 slideanim">
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <!-- About Us Page
+                    ==========================================-->
+                    <div id="tf-about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/02.png" class="img-responsive">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-text">
+                                        <div class="section-title">
+                                            <h4>About us</h4>
+                                            <h2>Some words <strong>about us</strong></h2>
+                                            <hr>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <p class="intro">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+                                        <ul class="about-list">
+                                            <li>
+                                                <span class="fa fa-dot-circle-o"></span>
+                                                <strong>Mission</strong> - <em>We deliver uniqueness and quality</em>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-dot-circle-o"></span>
+                                                <strong>Skills</strong> - <em>Delivering fast and excellent results</em>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-dot-circle-o"></span>
+                                                <strong>Clients</strong> - <em>Satisfied clients thanks to our experience</em>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button class="btn btn-default pull-right" type="submit">Send</button>
-                            </div>
-                        </div>	
                     </div>
-                </div>
-            </div>
 
-            <div id="googleMap" style="height:400px;width:100%;"></div>
+                    <!-- Team Page
+                        ==========================================-->
+                        <div id="tf-team" class="text-center">
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="section-title center">
+                                        <h2>Meet <strong>our team</strong></h2>
+                                        <div class="line">
+                                            <hr>
+                                        </div>
+                                    </div>
 
-            <!-- Add Google Maps -->
-            <script src="http://maps.googleapis.com/maps/api/js">
-            </script>
-            <script>
-                googleMaps();
-            </script>
+                                    <div id="team" class="owl-carousel owl-theme row">
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-            <footer class="text-center foot">
-                <a href="#myPage" title="To Top">
-                    <span class="glyphicon glyphicon-chevron-up"></span>
-                </a>
-            </footer>
-            <footer class="text-center">
-                <p>
-                    <a href="tel:+1-408-203-2094" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://www.bemidjistate.edu/offices/its/wp-content/uploads/sites/60/2014/12/phone-icon.png" width="40" height="30" alt="Email Vincent Yang" style="vertical-align:middle;" border="0"></span></a>
-                    <a href="mailto:vinyang@ucdavis.edu" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="http://iconswebsite.com/wp-content/uploads/2015/11/58ICONS-21-01.jpg" width="40" height="30" alt="Email Vincent Yang" style="vertical-align:middle;" border="0"></span></a>
-                </p>
-            </footer>
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-            <div>
-                <div class="alert fade in alert-success collapse" id="logged-in-status" role="alert" style="display:none;">
-                    <strong>Logged in!</strong>
-                </div>
-                <div class="alert fade in alert-success collapse" id="logged-out-status" role="alert" style="display:none;">
-                    <strong>Logged out!</strong>
-                </div>
-                <div class="alert fade in alert-warning collapse" id="already-logged-in" role="alert" style="display:none;">
-                    <button href="#" class="close-already-logged-in" aria-label="close">&times;</button>
-                    <strong>Already Logged In!</strong>
-                </div>
-                Username<br>
-                <input type="text" name="firstname" id="potentialusername">
-                <br>
-                Password<br>
-                <input type="password" name="lastname" id="potentialpassword">
-                <br>
-                Email<br>
-                <input type="text" name="email" id="potentialemail">
-                <br><br>
-                <input type="submit" id="registration" value="Submit">
-                <div class="alert fade in alert-danger collapse" id="login-error" role="alert" style="display:none;">
-                    <button href="#" class="close-error" aria-label="close">&times;</button>
-                    <strong>Error!</strong>
-                </div>
-                <br><br>
-                <input type="submit" id="signin" value="Sign In">
-                <br><br>
-                <input type="submit" id="signout" value="Sign Out">
-                <br><br>
-                <input type="submit" id="change-password" value="Change Password">
-                <br><br>
-            </div>
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-            <script type="text/javascript">
-                Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
-            </script>
-        </body>
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
+                                                <div class="caption">
+                                                    <h3>Jenn Gwapa</h3>
+                                                    <p>CEO / Founder</p>
+                                                    <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Section
+                            ==========================================-->
+                            <div id="tf-services" class="text-center">
+                                <div class="container">
+                                    <div class="section-title center">
+                                        <h2>Take a look at <strong>our services</strong></h2>
+                                        <div class="line">
+                                            <hr>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 service">
+                                            <i class="fa fa-desktop"></i>
+                                            <h4><strong>Web design</strong></h4>
+                                            <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 service">
+                                            <i class="fa fa-mobile"></i>
+                                            <h4><strong>Mobile Apps</strong></h4>
+                                            <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 service">
+                                            <i class="fa fa-camera"></i>
+                                            <h4><strong>Photography</strong></h4>
+                                            <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 service">
+                                            <i class="fa fa-bullhorn"></i>
+                                            <h4><strong>Marketing</strong></h4>
+                                            <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Clients Section
+                                ==========================================-->
+                                <div id="tf-clients" class="text-center">
+                                    <div class="overlay">
+                                        <div class="container">
+
+                                            <div class="section-title center">
+                                                <h2>Some of <strong>our Clients</strong></h2>
+                                                <div class="line">
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                            <div id="clients" class="owl-carousel owl-theme">
+                                                <div class="item">
+                                                    <img src="img/client/01.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/02.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/03.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/04.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/05.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/06.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/client/07.png">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Portfolio Section
+                                    ==========================================-->
+                                    <div id="tf-works">
+                                        <div class="container"> <!-- Container -->
+                                            <div class="section-title text-center center">
+                                                <h2>Take a look at <strong>our services</strong></h2>
+                                                <div class="line">
+                                                    <hr>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+                                            </div>
+                                            <div class="space"></div>
+
+                                            <div class="categories">
+
+                                                <ul class="cat">
+                                                    <li class="pull-left"><h4>Filter by Type:</h4></li>
+                                                    <li class="pull-right">
+                                                        <ol class="type">
+                                                            <li><a href="#" data-filter="*" class="active">All</a></li>
+                                                            <li><a href="#" data-filter=".web">Web Design</a></li>
+                                                            <li><a href="#" data-filter=".photography">Photography</a></li>
+                                                            <li><a href="#" data-filter=".app" >Mobile App</a></li>
+                                                            <li><a href="#" data-filter=".branding" >Branding</a></li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                            <div id="lightbox" class="row">
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/01.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/05.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 app">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/06.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/07.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                                                    <div class="portfolio-item">
+                                                        <div class="hover-bg">
+                                                            <a href="#">
+                                                                <div class="hover-text">
+                                                                    <h4>Logo Design</h4>
+                                                                    <small>Branding</small>
+                                                                    <div class="clearfix"></div>
+                                                                    <i class="fa fa-plus"></i>
+                                                                </div>
+                                                                <img src="img/portfolio/08.jpg" class="img-responsive" alt="...">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Testimonials Section
+                                        ==========================================-->
+                                        <div id="tf-testimonials" class="text-center">
+                                            <div class="overlay">
+                                                <div class="container">
+                                                    <div class="section-title center">
+                                                        <h2><strong>Our clients’</strong> testimonials</h2>
+                                                        <div class="line">
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-md-offset-2">
+                                                            <div id="testimonial" class="owl-carousel owl-theme">
+                                                                <div class="item">
+                                                                    <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                                                    <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                                                                </div>
+
+                                                                <div class="item">
+                                                                    <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                                                    <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                                                                </div>
+
+                                                                <div class="item">
+                                                                    <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                                                    <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Contact Section
+                                            ==========================================-->
+                                            <div id="tf-contact" class="text-center">
+                                                <div class="container">
+
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-md-offset-2">
+
+                                                            <div class="section-title center">
+                                                                <h2>Feel free to <strong>contact us</strong></h2>
+                                                                <div class="line">
+                                                                    <hr>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
+                                                            </div>
+
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Email address</label>
+                                                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputPassword1">Password</label>
+                                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">Message</label>
+                                                                    <textarea class="form-control" rows="3"></textarea>
+                                                                </div>
+
+                                                                <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <nav id="footer">
+                                                <div class="container">
+                                                    <div class="pull-left fnav">
+                                                    </div>
+                                                    <div class="pull-right fnav">
+                                                        <ul class="footer-social">
+                                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+
+
+                                            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                                            <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+                                            <!-- Include all compiled plugins (below), or include individual files as needed -->
+                                            <script type="text/javascript" src="js/bootstrap.js"></script>
+                                            <script type="text/javascript" src="js/SmoothScroll.js"></script>
+                                            <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+                                            <script src="js/owl.carousel.js"></script>
+
+                                            <!-- Javascripts================================================== -->
+                                                <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
 </html>
-
