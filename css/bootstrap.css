@@ -3460,7 +3460,8 @@ tbody.collapse.in {
 .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #337ab7;
+  /*background-color: #000000; *//*Background Color Mouseover*/
+  background: rgba(2, 2, 2, 0.5); /*Opaque background*/
   outline: 0;
 }
 .dropdown-menu > .disabled > a,

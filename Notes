@@ -22,3 +22,7 @@ Node.js
 
 Socket.io
 
+For Current Project:
+    js/main.js holds sizing for carousel (ex: testimonials; pstatement)
+    css/style.css holds navbar etc styling
+

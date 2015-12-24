@@ -234,6 +234,18 @@ function main() {
                 ],
             });
 
+
+            $("#pstatement").owlCarousel({
+
+                navigation : false, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                autoHeight : true,
+                itemsCustom : [ //size vs number of items
+                    [700, 3]
+                ],
+            });
+
             $("#testimonial").owlCarousel({
                 navigation : false, // Show next and prev buttons
                 slideSpeed : 300,
