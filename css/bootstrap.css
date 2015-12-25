@@ -1094,7 +1094,7 @@ a {
 }
 .no-touch a:hover,
 a:focus {
-  color: #23527c;
+  color: #65adf5 !important; /*Color for mouseover on all of nav menu including dropdown*/
   text-decoration: underline;
 }
 a:focus {
@@ -3310,7 +3310,7 @@ fieldset[disabled] .btn-link {
 }
 .no-touch .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  /*color: #23527c;*/
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3421,7 +3421,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  /*background-color: #fff;*/
+  background-color: rgba(1, 1, 1, 0.3); /*Background color of nav dropdown*/
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -4631,7 +4631,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > .no-touch span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #23527c;
+  /*color: #23527c;*/
   background-color: #eee;
   border-color: #ddd;
 }
@@ -6578,6 +6578,3 @@ button.close {
 }
 
 .nav-pills .dropdown .dropdown-toggle {
-    background-color: #ff0000 !important; /*changes bottom dropdown but not others?*/
-    color:#ffffff !important;
-}

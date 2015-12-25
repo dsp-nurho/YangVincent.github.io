@@ -27,7 +27,8 @@ h4{
 	text-transform: uppercase;
 }
 h5{
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+    /*No upper case for Jin's statement*/
 	font-weight: 700;
 	line-height: 20px;
 }
@@ -40,15 +41,15 @@ p.intro{
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 }
-a{ color: #FCAC45;}
+a{ color: #fff;} /*Color for dropdown menu*/
 a:hover,
 a:focus{
 	text-decoration: none;
-	color: #FCAC45;
+	color: #afd2e9;
 }
 
 .section-title hr{
-	border-color: #fcac45;
+	border-color: #AFD2E9; /*Underlining on some titles*/
 	border-width: 4px;
 	width: 60px;
 	float: left;
@@ -76,8 +77,8 @@ ul, ol{
 	transition: all 0.8s;
 }
 #tf-menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
-	border-color: rgba(231, 231, 231, 0);
+	background-color: rgba(248, 248, 248, 0); /*Background of navbar*/
+	border-color: rgba(231, 231, 231, 0); /*Line under navbar*/
 }
 #tf-menu a.navbar-brand {
 text-transform: uppercase;
@@ -99,7 +100,7 @@ font-weight: 900;
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-	color: #FCAC45 !important;
+	color: #AFD2E9 !important; /*Current page on navbar*/
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -109,11 +110,11 @@ font-weight: 900;
 	}
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
-	background-color: #FCAC45;
-	border-color: #FCAC45;
+	background-color: #afd2e9; /*Not sure - mobile?*/
+	border-color: #afd2e9;
 	}
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #FFF;
+	background-color: #000;
 	}
 /* Home Style */
 #tf-home{
@@ -138,7 +139,7 @@ font-weight: 900;
 	background-attachment: fixed;
 }
 #tf-home p.lead{
-	color: #e3e3e3;
+	color: #e3e3e3; /*Grey*/
 }
 
 .content{
@@ -147,7 +148,7 @@ font-weight: 900;
 }
 
 .color{
-	color: #fcac45;
+	color: #AFD2E9;
 }
 
 a.fa.fa-angle-down {
@@ -160,9 +161,9 @@ a.fa.fa-angle-down {
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
-	background: #fcac45;
-	color: #ffffff;
-	border: 2px solid #fcac45;
+	background: #000; /*Downpage arrow coloring*/
+	color: #AFD2E9; /*Color of icon*/
+	border: 2px solid #AFD2E9; /*white border*/
 }
 /* About Section */
 #tf-about{
@@ -208,7 +209,7 @@ ul.about-list li span{
 	font-weight: 300;
 }
 .section-title.center .line{
-	border-top: 4px solid #fcac45;
+	border-top: 4px solid #afd2e9; /*Top line on double lines ex: pres statement*/
 	height: 10px;
 	width: 60px;
 	text-align: center;
@@ -217,7 +218,7 @@ ul.about-list li span{
 }
 
 .section-title.center hr {
-	border-top: 4px solid rgba(252, 172, 69, 0.34);
+	border-top: 4px solid rgba(175, 210, 233, 0.34); 
 	width: 40px;
 	text-align: center;
 	margin-top: 10px;
@@ -239,7 +240,7 @@ img.img-circle.brothers-img {
 	transition: all 0.5s;
 }
 #tf-brothers .item .thumbnail:hover>img.img-circle.brothers-img{
-	border: 4px solid #FCAC45;
+	border: 4px solid #afd2e9; /*Brother hovering*/
 }
 #tf-brothers .thumbnail {
 	background: transparent;
@@ -269,10 +270,10 @@ img.img-circle.brothers-img {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
 	filter: Alpha(Opacity=100);
 	opacity: 1;
-	background: #FCAC45;
+	background: #afd2e9;
 }
 .owl-theme .owl-controls .owl-page.active span{
-	background: #FCAC45;
+	background: #65adf5; /*Square page indicator passive color*/
 }
 
 /* Pillars Section */
@@ -286,7 +287,7 @@ img.img-circle.brothers-img {
 
 #tf-pillars i.fa {
 	font-size: 40px;
-	border: 4px solid #FCAC45;
+	border: 4px solid #afd2e9;
 	width: 100px;
 	height: 100px;
 	padding: 27px 25px;
@@ -301,7 +302,7 @@ img.img-circle.brothers-img {
 }
 
 #tf-pillars .service:hover>i.fa{
-	background: #FCAC45;
+	background: #65adf5; /*fill in circle colors*/
 	color: #ffffff;
 }
 
@@ -437,11 +438,11 @@ ol.type li a.active { font-weight: 700; }
 #tf-careers i.fa {
 	height: 30px;
 	width: 30px;
-	border: 1px solid #FCAC45;
+	border: 1px solid #65adf5; /*outside circle of plus sign*/
 	font-size: 20px;
 	padding: 5px;
 	border-radius: 50%;
-	color: #FCAC45;
+	color: #65adf5; /*plus sign*/
 }
 /* PresidentialStatement Section */
 #tf-pstatement{
@@ -516,7 +517,7 @@ label {
 
 button.btn.tf-btn.btn-default {
 	float: right;
-	background: #FCAC45;
+	background: #65adf5; /*Submit button on bottom*/
 	border: 0;
 	border-radius: 0;
 	padding: 10px 40px;
@@ -567,8 +568,8 @@ nav#footer p{
 	transition: all 0.5s;
 }
 #footer i.fa:hover{
-	background: #FCAC45;
-	border-color: #FCAC45;
+	background: #65adf5; /*footer hovering*/
+	border-color: #afd2e9;
 	color: #ffffff;
 
 }
