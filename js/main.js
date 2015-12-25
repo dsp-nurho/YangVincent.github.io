@@ -2,6 +2,10 @@ $(document).ready(function() {
     setTimeout(function() {
         $('body').addClass('loaded');
     }, 1500);
+
+    $(".pillaricon").hover(function () {
+        $(this).toggleClass("fa-spin");
+    });
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
         // Prevent default anchor click behavior
