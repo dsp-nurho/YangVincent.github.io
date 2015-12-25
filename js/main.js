@@ -41,6 +41,9 @@ $(document).ready(function() {
         else {
             $('.shortnav').removeClass('navbar-collapse');
         }*/
+        
+
+
         $(".slideanim").each(function(){
             var pos = $(this).offset().top;
 
@@ -197,10 +200,10 @@ function main() {
           ======================================*/
         $(window).bind('scroll', function() {
             var navHeight = $(window).height() - 100;
-            if ($(window).scrollTop() > navHeight) {
+            if ($(window).scrollTop() > navHeight || document.getElementsByClassName("smallnav") && $(window).scrollTop() > 0) { /*smallnav for pages w/o landing*/
                 $('.navbar-default').addClass('on');
             } else {
-                $('.navbar-default').removeClass('on');
+                $('.navbar-default').removeClass('on'); /*comment this out to make navbar always shrink*/
             }
         });
 
