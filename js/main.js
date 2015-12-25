@@ -33,6 +33,14 @@ $(document).ready(function() {
 
     // Slide in elements on scroll
     $(window).scroll(function() {
+        /*always shrink down fix for about.html*/
+        /*if ($(document).scrollTop() > 0) { 
+            $('.shortnav').addClass('navbar-collapse');
+            console.log("distance is", $(document).scrollTop());
+        }
+        else {
+            $('.shortnav').removeClass('navbar-collapse');
+        }*/
         $(".slideanim").each(function(){
             var pos = $(this).offset().top;
 
