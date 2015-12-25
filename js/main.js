@@ -242,8 +242,8 @@ function main() {
 
             $("#pstatement").owlCarousel({
                 navigation : false, // Show next and prev buttons
-                slideSpeed : 300,
                 paginationSpeed : 400,
+                center: true,
                 singleItem:true
             });
 
