@@ -179,8 +179,8 @@ ul.about-list li span{
 	margin-right: 10px;
 }
 
-/* Team Section */
-#tf-team{
+/* Brothers Section */
+#tf-brothers{
 	background: url(../img/03.jpg);
 	background-size: cover;
 	background-position: center;
@@ -188,7 +188,7 @@ ul.about-list li span{
 	background-repeat: no-repeat;
 	color: #ffffff;
 }
-#tf-team .overlay{
+#tf-brothers .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -224,29 +224,29 @@ ul.about-list li span{
 	position: relative;
 	left: 17%;
 }
-#team{ margin: 0 auto}
-#team .item{
+#brothers{ margin: 0 auto}
+#brothers .item{
     padding: 0;
     margin: 15px;
     color: #FFF;
     text-align: center;
 }
 
-img.img-circle.team-img {
+img.img-circle.brothers-img {
 	width: 120px;
 	height: 120px;
 	border: 4px solid transparent;
 	transition: all 0.5s;
 }
-#tf-team .item .thumbnail:hover>img.img-circle.team-img{
+#tf-brothers .item .thumbnail:hover>img.img-circle.brothers-img{
 	border: 4px solid #FCAC45;
 }
-#tf-team .thumbnail {
+#tf-brothers .thumbnail {
 	background: transparent;
 	border: 0;
 }
 
-#tf-team .thumbnail .caption {
+#tf-brothers .thumbnail .caption {
 	padding: 9px;
 	color: #F2F2F2;
 }
@@ -275,8 +275,8 @@ img.img-circle.team-img {
 	background: #FCAC45;
 }
 
-/* Services Section */
-#tf-services{
+/* Pillars Section */
+#tf-pillars{
 	padding: 80px 0;
 }
 
@@ -284,7 +284,7 @@ img.img-circle.team-img {
 	margin-top: 40px;
 }
 
-#tf-services i.fa {
+#tf-pillars i.fa {
 	font-size: 40px;
 	border: 4px solid #FCAC45;
 	width: 100px;
@@ -295,12 +295,12 @@ img.img-circle.team-img {
 	transition: all 0.5s;
 }
 
-#tf-services i.fa.fa-mobile{
+#tf-pillars i.fa.fa-mobile{
 	font-size: 50px;
 	padding: 20px 25px;
 }
 
-#tf-services .service:hover>i.fa{
+#tf-pillars .service:hover>i.fa{
 	background: #FCAC45;
 	color: #ffffff;
 }
@@ -335,7 +335,7 @@ img.img-circle.team-img {
 }
 /* Gallery Section 
 ==============================*/
-#tf-works{
+#tf-careers{
 	padding: 80px 0;
 }
 .categories{ 
@@ -344,7 +344,7 @@ img.img-circle.team-img {
 ul.cat li{
 	display: inline-block;
 }
-#tf-works li.pull-right {
+#tf-careers li.pull-right {
 	margin-top: 10px;
 }
 ol.type li{
@@ -434,7 +434,7 @@ ol.type li a.active { font-weight: 700; }
 .hover-bg:hover .hover-text{
 	opacity: 1;
 }
-#tf-works i.fa {
+#tf-careers i.fa {
 	height: 30px;
 	width: 30px;
 	border: 1px solid #FCAC45;
@@ -443,8 +443,8 @@ ol.type li a.active { font-weight: 700; }
 	border-radius: 50%;
 	color: #FCAC45;
 }
-/* Testimonials Section */
-#tf-testimonials{
+/* PresidentialStatement Section */
+#tf-pstatement{
 	background: url(../img/05.jpg);
 	background-size: cover;
 	background-position: center;
@@ -453,7 +453,7 @@ ol.type li a.active { font-weight: 700; }
 	color: #ffffff;
 }
 
-#tf-testimonials .overlay{
+#tf-pstatement .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -464,16 +464,16 @@ ol.type li a.active { font-weight: 700; }
 	padding: 80px 0;
 	background-attachment: fixed;
 }
-#testimonial {
+#pstatement {
 	padding: 30px 0;
 }
-#testimonial .item{
+#pstatement .item{
     display: block;
     width: 100%;
     height: auto;
 }
 
-#testimonial .item p {
+#pstatement .item p {
 	font-weight: 400;
 	margin: 30px 0;
 	color: #d1d1d1;
