@@ -2,7 +2,7 @@ body,
 .signin {
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #fff; /*Changes username and password and content field colors!*/
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -84,14 +84,14 @@ span {
     position: relative;
     top: -65px;
     transition: all 0.5s ease-in-out;
-}
+}*/
 
 .text {
     border: none;
     width: 89%;
     padding: 10px 20px;
     display: block;
-    height: 15px;
+    /*height: 15px;*/
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0);
@@ -99,6 +99,7 @@ span {
     margin-top: 15px;
     transition: all 0.5s ease-in-out;
 }
+/*
 
 .text:focus {
     outline: 0;
