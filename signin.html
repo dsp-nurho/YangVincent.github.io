@@ -68,7 +68,8 @@
         
 
     </head>
-    <body style="background-color:#fff">
+    <!--<body style="background-color:#fff; background: url('img/04.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">-->
+    <body style="background-color: #333; background: url('img/04.jpg')">
     <!-- Navigation
     ==========================================-->
     <nav id="tf-menu" class="shortnav navbar navbar-default navbar-fixed-top" style="background-color: #000">
@@ -140,7 +141,7 @@
                     <li><a href="recruitment.html#tf-recruitment-apply">Apply</a></li> 
                 </ul>
             </li>
-            <li><a href="#calendar">EVENTS</a></li>
+            <li><a href="events.html#">EVENTS</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" href="sponsors.html#">SPONSORS
                     <span class="caret"></span></a>
@@ -159,17 +160,16 @@
                     <li><a href="contact.html#tf-contact-questions">Questions?</a></li> 
                 </ul>
             </li>
-            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="#tf-login">Sign In</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-        <div id="calendar" class="calendar">
-        </div>
 
-        <script src="dropzone.js"></script> <!--filedrop integration-->
+<!--filedrop integration-->
+        <!--<script src="dropzone.js"></script> 
         <form action="/file-upload"
               class="dropzone"
               style="padding-top: 15vh"
@@ -177,9 +177,33 @@
             <div class="fallback">
                 <input name="file" type="file" multiple/>
             </div>
+            </form>-->
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='css/signin.css' rel='stylesheet' type='text/css'>
+    <div id="tf-login" class="login" style="padding-top: 15vh;">
+        <h2 href="#" class="activelogin"> Sign In </h2>
+        <h2 href="#" class="nonactivelogin"> Sign Up </h2>
+        <form>
+            <input type="text" class="text" name="username">
+            <span>username</span>
+            <br><br>
+            <input type="password" class="text" name="password">
+            <span>password</span>
+            <br>
+            <!--<input type="checkbox" name="signincheckbox" class="custom-checkbox-login"/> 
+                <label for="signincheckbox">Keep me checked in</label>-->
+            <br><br>
+            <button class="signin">
+                Sign In
+            </button>
+            <hr>
+            <a href="#" class="forgot-pass">Forgot Password?</a>
         </form>
+    </div>
+
         
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
