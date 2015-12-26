@@ -1,7 +1,7 @@
 body,
 .signin {
     background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+/*    font-family: 'Montserrat', sans-serif;*/
     color: #fff; /*Changes username and password and content field colors!*/
     font-size: 14px;
     letter-spacing: 1px;
