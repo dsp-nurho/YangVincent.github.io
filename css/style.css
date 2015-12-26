@@ -334,11 +334,37 @@ img.img-circle.brothers-img {
     color: #FFF;
     text-align: center;
 }
+
+/* Brothers Deltasigs section in Brothers.html */
+#tf-brothers-deltasigs{
+/*	background: url(../img/03.jpg);*/
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+#tf-brothers-deltasigs i.fa {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #65adf5; /*outside circle of plus sign*/
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 50%;
+	color: #65adf5; /*plus sign*/
+}
+#tf-brothers-deltasigs{
+	padding: 80px 0;
+}
+#tf-brothers-deltasigs li.pull-right {
+	margin-top: 10px;
+}
 /* Gallery Section 
 ==============================*/
 #tf-careers{
 	padding: 80px 0;
 }
+
 .categories{ 
 	padding: 10px 0;
 }
@@ -348,6 +374,7 @@ ul.cat li{
 #tf-careers li.pull-right {
 	margin-top: 10px;
 }
+
 ol.type li{
 	display: inline-block;
 	margin-left: 20px;
@@ -444,6 +471,8 @@ ol.type li a.active { font-weight: 700; }
 	border-radius: 50%;
 	color: #65adf5; /*plus sign*/
 }
+
+
 /* PresidentialStatement Section */
 #tf-pstatement{
 	background: url(../img/05.jpg);

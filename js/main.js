@@ -33,14 +33,6 @@ $(document).ready(function() {
 
     // Slide in elements on scroll
     $(window).scroll(function() {
-        /*always shrink down fix for about.html*/
-        /*if ($(document).scrollTop() > 0) { 
-            $('.shortnav').addClass('navbar-collapse');
-            console.log("distance is", $(document).scrollTop());
-        }
-        else {
-            $('.shortnav').removeClass('navbar-collapse');
-        }*/
         $(".slideanim").each(function(){
             var pos = $(this).offset().top;
 
@@ -199,8 +191,14 @@ function main() {
             var navHeight = $(window).height() - 100;
             if ($(window).scrollTop() > navHeight) {
                 $('.navbar-default').addClass('on');
+                if ($(window).scrollTop() > 1) {
+                    $('.shortnav').addClass('on');
+                }
             } else {
                 $('.navbar-default').removeClass('on');
+                if ($(window).scrollTop() > 1) {
+                    $('.shortnav').addClass('on');
+                }
             }
         });
 
