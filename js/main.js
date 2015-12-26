@@ -105,13 +105,22 @@ $(document).ready(function() {
         });
     });
     $('#signin').click(function() {
-        if (Parse.User.current() != null){
+        alert("clicked lalala");
+        /*if (Parse.User.current() != null){
+            alert("already logged in");
             $('#already-logged-in').show();
             return;
-        }
+        }*/
+        alert("checking for login!");
         var username=document.getElementById('potentialusername').value;
         var password=document.getElementById('potentialpassword').value;
+        alert("username is ", username);
+        alert("password is ", password);
+        alert(username);
+        alert(password);
+        alert("endd");
         Parse.User.logIn(username, password, {
+            alert("called");
             success: function(user) {
                 alert("logged in!");
                 document.getElementById('potentialusername').value = "";
@@ -126,7 +135,6 @@ $(document).ready(function() {
                 document.getElementById('potentialemail').value = "";
                 $('#logged-in-status').hide();
                 $('logged-out-status').show();
-
             }
         });
     });
