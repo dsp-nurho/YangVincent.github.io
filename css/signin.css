@@ -1,10 +1,16 @@
-body,
 .signin {
     background-color: transparent;
     /*font-family: 'Montserrat', sans-serif;*/
     color: #fff; /*Changes username and password and content field colors!*/
     font-size: 14px;
     letter-spacing: 1px;
+}
+.signin-label {
+    background-color: transparent;
+    /*font-family: 'Montserrat', sans-serif;*/
+    color: #fff; /*Changes username and password and content field colors!*/
+    letter-spacing: 1px;
+
 }
 .login {
     position: relative;
@@ -75,16 +81,17 @@ h2:first-child {
 padding-left: 0px;
 }
  */
-/*
+
 span {
+    color: #eee;
     text-transform: uppercase;
     font-size: 12px;
-    opacity: 0.4; 
+    opacity: 0.5; 
     display: inline-block;
     position: relative;
     top: -65px;
     transition: all 0.5s ease-in-out;
-}*/
+}
 
 .text {
     border: none;
@@ -93,7 +100,7 @@ span {
     display: block;
     /*height: 15px;*/
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     border: 2px solid rgba(255, 255, 255, 0);
     overflow: hidden;
     margin-top: 15px;
@@ -108,7 +115,7 @@ span {
 }
 
 .text:focus + span {
-    opacity: 0.6;
+    opacity: 0.9;
 }
 input[type="text"],
 input[type="password"] {
