@@ -43,10 +43,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="background-color: #000000;">
     <!-- Navigation
     ==========================================-->
-    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+    <nav id="tf-menu" class="shortnav navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -97,12 +97,12 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a class="dropdown-toggle" href="careers.html#">CAREERS
+                <a class="dropdown-toggle" href="#tf-careers-internships">CAREERS
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="careers.html#tf-careers-internships">Internships</a></li> 
-                    <li><a href="careers.html#tf-careers-fulltime">Full Time</a></li> 
-                    <li><a href="careers.html#tf-careers-brothers">Brother Testimonials</a></li> 
+                    <li><a href="#tf-careers-internships">Internships</a></li> 
+                    <li><a href="#tf-careers-fulltime">Full Time</a></li> 
+                    <li><a href="#tf-careers-brothers">Brother Testimonials</a></li> 
                 </ul>
             </li>
             <li class="dropdown">
@@ -141,48 +141,176 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- Testimonials Section
+
+    
+
+    <!-- Portfolio Section
     ==========================================-->
-    <div id="tf-pstatement" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2><strong>Our clients’</strong> testimonials</h2>
-                    <div class="line">
-                        <hr>
-                    </div>
+    <div id="tf-careers-internships">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2>Take a look at <strong>where we are</strong></h2>
+                <div class="line">
+                    <hr>
                 </div>
-                <div id="pstatement" class="owl-carousel owl-theme"> 
+                <div class="clearfix"></div>
+                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+            </div>
 
-                    <div class="item">
-                        <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                        <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                    </div>
 
-                    
-                    <div class="item">
-                        <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                        <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                    </div>
-                    <div class="item">
-                        <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                        <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                    </div>
-                </div>
-                	
+            <div class="space"></div>
+
+            <div class="categories">
                 
-                    
+                <ul class="cat">
+                    <li class="pull-left"><h4>Filter by Type:</h4></li>
+                    <li class="pull-right">
+                        <ol class="type">
+                            <li><a href="#" data-filter="*" class="active">All</a></li>
+                            <li><a href="#" data-filter=".web">Finance</a></li>
+                            <li><a href="#" data-filter=".photography">Marketing</a></li>
+                            <li><a href="#" data-filter=".app" >Technology</a></li>
+                            <li><a href="#" data-filter=".branding" >Consulting</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+            <div id="lightbox" class="row">
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Google</h4>
+                                    <small>Software Engineer</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/01.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Accenture</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>EY</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/05.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 app">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/06.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/07.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/08.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    
-
-    
-
-    
-
-    
 
 
 

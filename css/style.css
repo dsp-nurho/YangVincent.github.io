@@ -359,6 +359,32 @@ img.img-circle.brothers-img {
 #tf-brothers-deltasigs li.pull-right {
 	margin-top: 10px;
 }
+/* Careers tf-careers-internships*/
+#tf-careers-internships{
+/*	background: url(../img/03.jpg);*/
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+#tf-careers-internships i.fa {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #65adf5; /*outside circle of plus sign*/
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 50%;
+	color: #65adf5; /*plus sign*/
+}
+#tf-careers-internships{
+	padding: 80px 0;
+}
+#tf-careers-internships li.pull-right {
+	margin-top: 10px;
+}
+
+/* End Careers tf-careers-internships*/
 /* Gallery Section 
 ==============================*/
 #tf-careers{
