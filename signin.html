@@ -175,24 +175,50 @@
     <div id="tf-login" class="tf-login login" style="padding-top: 15vh;">
         <h2 href="#" class="signin-label activelogin"> Sign In </h2>
         <h2 href="#" class="signin-label nonactivelogin"> Sign Up </h2>
+        <div class="alert fade in alert-success collapse" id="logged-in-status" role="alert" style="display:none; opacity: 0.5">
+            <strong>Logged in!</strong>
+        </div>
+        <div class="alert fade in alert-success collapse" id="logged-out-status" role="alert" style="display:none;">
+                    <strong>Logged out!</strong>
+                </div>
+                <div class="alert fade in alert-warning collapse" id="already-logged-in" role="alert" style="display:none;">
+                    <button href="#" class="close-already-logged-in" aria-label="close">&times;</button>
+                    <strong>Already Logged In!</strong>
+                </div>
+                
+                <div class="alert fade in alert-danger collapse" id="login-error" role="alert" style="display:none;">
+                    <button href="#" class="close-error" aria-label="close">&times;</button>
+                    <strong>Error!</strong>
+                </div>
         <form>
-            <input type="text" class="text" name="username">
+
+            <input type="text" class="text" name="username" id="potentialusername">
             <span>username</span>
-            <br><br>
-            <input type="password" class="text" name="password">
+            <br>
+            <input type="password" class="text" name="password" id="potentialpassword">
             <span>password</span>
             <br>
-            <!--<input type="checkbox" name="signincheckbox" class="custom-checkbox-login"/> 
-                <label for="signincheckbox">Keep me checked in</label>-->
+            <input type="text" class="text" name="email" id="potentialemail">
+            <span>email</span>
+            <br>
             <br><br>
-            <button class="signin">
-                Sign In
-            </button>
             <hr>
             <a href="#" class="forgot-pass">Forgot Password?</a>
+
         </form>
+        <input type="submit" id="registration" value="Sign Up" class="signin">
+        <input type="submit" id="signin" value="Sign In" class="signin">
+        <input type="submit" id="signout" value="Sign Out" class="signin">
+        
+        <input type="submit" id="change-password" value="Change Password" class="signin">
     </div>
 
+
+
+            
+    <script type="text/javascript">
+        Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
+    </script>
         
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>

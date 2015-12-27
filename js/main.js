@@ -83,6 +83,7 @@ $(document).ready(function() {
                 document.getElementById('potentialemail').value = "";
             }
         });
+        alert("created act");
     });
     $('#change-password').click(function() {
         var email = document.getElementById('potentialemail').value;
@@ -105,8 +106,10 @@ $(document).ready(function() {
         });
     });
     $('#signin').click(function() {
+        alert("reached basic signin");
         if (Parse.User.current() != null){
             $('#already-logged-in').show();
+            alert("already logged in");
             return;
         }
         var username=document.getElementById('potentialusername').value;
