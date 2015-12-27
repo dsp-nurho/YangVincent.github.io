@@ -118,10 +118,11 @@ $(document).ready(function() {
         Parse.User.logIn(username, password, {
             success: function(user) {
                 alert("logged in!");
-                document.getElementById('potentialusername').value = "";
+                window.location = 'profile.html'
+                /*document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
                 document.getElementById('potentialemail').value = "";
-                $('#logged-in-status').show();
+                $('#logged-in-status').show();*/
             },
             error: function(user, error) {
                 alert("Unable to log in")
