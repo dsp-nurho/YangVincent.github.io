@@ -86,6 +86,7 @@ $(document).ready(function() {
         alert("created act");
     });
     $('#change-password').click(function() {
+        alert("hit change pass");
         var email = document.getElementById('potentialemail').value;
         if (email == "") {
             alert("You must fill out the email field!");
@@ -134,9 +135,9 @@ $(document).ready(function() {
         });
     });
     $('#signout').click(function() {
+        alert("signing out");
         document.getElementById('potentialusername').value = "";
         document.getElementById('potentialpassword').value = "";
-        document.getElementById('potentialemail').value = "";
         if (Parse.User.current() == null) {
             alert("Not logged in");
         }

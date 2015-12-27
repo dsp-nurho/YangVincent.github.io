@@ -150,7 +150,7 @@
                     <li><a href="contact.html#tf-contact-questions">Questions?</a></li> 
                 </ul>
             </li>
-            <li><a href="#tf-login">Sign In</a></li>
+            <li><a href="#tf-login">Forgot Password</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -173,10 +173,13 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='css/signin.css' rel='stylesheet' type='text/css'>
     <div id="tf-login" class="tf-login login" style="padding-top: 15vh;">
-        <h2 href="#" class="signin-label activelogin"> Sign In </h2>
+        <a href="signin.html#">
+            <h2 class="signin-label nonactivelogin"> Sign In </h2>
+        </a>
         <a href="signup.html#">
             <h2 class="signin-label nonactivelogin"> Sign Up </h2>
         </a>
+        <h2 class="signin-label activelogin"> Forgot Password</h2>
         <div class="alert fade in alert-success collapse" id="logged-in-status" role="alert" style="display:none; opacity: 0.5">
             <strong>Logged in!</strong>
         </div>
@@ -193,21 +196,14 @@
                     <strong>Error!</strong>
                 </div>
         <form>
-            <input type="text" class="text" name="username" id="potentialusername">
-            <span>username</span>
-            <input type="password" class="text" name="password" id="potentialpassword">
-            <span>password</span>
+            <input type="text" class="text" name="username" id="potentialemail">
+            <span>email</span>
             <hr>
-            <a href="forgotpass.html#" class="forgot-pass">Forgot Password?</a>
 
         </form>
-        <input type="submit" id="signin" value="Sign In" class="signin">
+        <input type="submit" id="change-password" value="Send Password Reset Email" class="signin">
         <input type="submit" id="signout" value="Sign Out" class="signin">
     </div>
-
-
-
-            
     <script type="text/javascript">
         Parse.initialize("JShdRZYWwOoqUzrI71UIkRuqGe0tPNkQqZLGZBfd", "Jfj51JHJZpnrX0sjaswaXC4nmj0FuGlsjHktqcP7");
     </script>
