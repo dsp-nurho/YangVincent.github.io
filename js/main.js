@@ -107,7 +107,6 @@ $(document).ready(function() {
         });
     });
     $('#signin').click(function() {
-        alert("reached basic signin");
         if (Parse.User.current() != null){
             $('#already-logged-in').show();
             alert("already logged in");
@@ -137,15 +136,13 @@ $(document).ready(function() {
     });
     $('#signout').click(function() {
         alert("signing out");
-        document.getElementById('potentialusername').value = "";
-        document.getElementById('potentialpassword').value = "";
         if (Parse.User.current() == null) {
             alert("Not logged in");
         }
-        alert("signing out");
         Parse.User.logOut();
-        $('#logged-in-status').hide();
-        $('#already-logged-in').hide();
+        window.location= 'signin.html';
+        /*$('#logged-in-status').hide();
+        $('#already-logged-in').hide();*/
     });
 });
 
