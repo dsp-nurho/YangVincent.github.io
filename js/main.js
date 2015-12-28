@@ -117,7 +117,7 @@ $(document).ready(function() {
         Parse.User.logIn(username, password, {
             success: function(user) {
                 alert("logged in!");
-                window.location = 'profile.html'
+                window.location = 'indexin.html'
                 /*document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
                 document.getElementById('potentialemail').value = "";
@@ -125,9 +125,9 @@ $(document).ready(function() {
             },
             error: function(user, error) {
                 alert("Unable to log in")
-                    document.getElementById('potentialusername').value = "";
+                /*    document.getElementById('potentialusername').value = "";
                 document.getElementById('potentialpassword').value = "";
-                document.getElementById('potentialemail').value = "";
+                document.getElementById('potentialemail').value = "";*/
                 $('#logged-in-status').hide();
                 $('logged-out-status').show();
 
