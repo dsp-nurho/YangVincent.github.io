@@ -118,7 +118,8 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/01.jpg);
+	/*background: url(../img/01.jpg);*/
+    background: url(../img/expand_your_network.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -182,7 +183,8 @@ ul.about-list li span{
 
 /* Brothers Section */
 #tf-brothers{
-	background: url(../img/03.jpg);
+	/*background: url(../img/03.jpg);*/
+    background: url(../img/brothers_chalkboard.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
