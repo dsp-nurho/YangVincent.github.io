@@ -40,6 +40,16 @@ p.intro{
 	margin: 12px 0 0;
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+    p.intro {
+	font-size: 16px;
+	margin: 12px 0 0;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    }
 }
 a{ color: #fff;} /*Color for dropdown menu*/
 a:hover,
