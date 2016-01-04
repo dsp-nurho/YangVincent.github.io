@@ -4,3 +4,5 @@
 * ``git clone``
 ![](http://i.imgur.com/Y9VjCOg.png)
 
+This is created in collaboration with Sarah Tao and Mary Serafin
+
