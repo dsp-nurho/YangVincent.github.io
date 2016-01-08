@@ -582,6 +582,7 @@ ol.type li a.active { font-weight: 700; }
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #000;
+	line-height: 1.5;
 }
 #tf-quote{
 	background: url(../img/brother_suit.jpg);
